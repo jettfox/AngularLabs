@@ -1,0 +1,22 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+            <div>
+                <input type="text" id="login" class="fadeIn second" [(ngModel)]="email" name="email"
+                    placeholder="login">
+            </div>
+            <div>
+                <input type="text" id="password" class="fadeIn third" [(ngModel)]="password" name="password"
+                    placeholder="password">
+            </div>
+            <div>
+                <input type="submit" class="fadeIn fourth" value="Log In" (click)="logIn()">
+            </div>
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover" href="/login" (click)="forgot()">Forgot Password?</a>
+        </div>
+
+    </div>
+</div>
+<router-outlet></router-outlet>
